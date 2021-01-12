@@ -1,5 +1,5 @@
 
-# MAnupulación de las bases de datos
+# Manupulación de las bases de datos
 Query (Query son las intrucciones que se dan mediante el código). Antes de comenzar entra al siguiente link que sirve para ejecutar la sintaxis SQL en linea https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all. Para comentar dentro de la sintaxis de SQL se utiliza --
 
 Seleccionamos todos "*" los elementos contenidos en la tabla Poducts al concluir una sentencia es necesario terminar con un ; para que las sentencias no se mezclen entre sí
