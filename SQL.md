@@ -26,3 +26,26 @@ Ahora combinamos lo anterior pidiendo una columna en específico llamda Customer
 El filtro no solo funciona para elegir, tambien para excluir, podemos pedir todos los demas paises excluyendo a Mexico usando un signo de admiración
 
 ### SELECT  CustomerName AS "Nombre del cliente" FROM Customers WHERE Country != "Mexico";
+
+Podemos filtrar intervalos de valores numéricos usando desigualdades, en el lenguaje de Query se le llama operadores relacionales < ,<=, >, >= 
+### SELECT * FROM Products WHERE Price >= "20";
+
+Similarmente, podemos elegir datos anteriores o posteriores a una fecha, mientras esta esté registrada en una columna
+
+### SELECT * FROM Orders WHERE OrderDate >= "1997-01-01";
+
+Es posible utilizar filtros para mas de una columna de manera simultanea, por ejemplo en la tabla products tenemos las columnas SupplierID y Price,
+pedimos los valores en donde SupplierID sea igual a 1 pero tambien en donde Price sea mayor que 20 con el comando AND
+
+### SELECT * FROM Products WHERE SupplierID = 1 AND Price <= 20
+
+Del mismo modo podemos pedir que nos dé los productos en donde SupplierID sea igual a 1 o que Price sea mayor que 20 
+
+### SELECT * FROM Products WHERE SupplierID = 1 OR Price <= 20
+
+La diferencia entre AND y OR radica en qué, AND se utiliza para obtener los datos que cumplen obligatoriamente las condiciones impuestas, con el comando OR 
+pedimos los datos que contengan una u otra condición
+
+
+
+
