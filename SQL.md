@@ -15,14 +15,14 @@ Como vimos antes las columnas ya tienen un nombre, este puede ser cambiado de la
 
 Podemos filtrar datos, por ejemplo la tabla Customers tiene una columna llamada Country, y contiene varios paises, podemos filtrar todas las filas que contienen a Mexico de la siguiente manera
 
-###SELECT  * FROM Customers WHERE Country = "Mexico";
+### SELECT  * FROM Customers WHERE Country = "Mexico";
 
 Si tu filtro contiene texto deberás usar comillas ""
 
 Ahora combinamos lo anterior pidiendo una columna en específico llamda CustomerName utiliando el filtro llamado Mexico
 
-###SELECT  CustomerName FROM Customers WHERE Country = "Mexico";
+### SELECT  CustomerName FROM Customers WHERE Country = "Mexico";
 
 El filtro no solo funciona para elegir, tambien para excluir, podemos pedir todos los demas paises excluyendo a Mexico usando un signo de admiración
 
-###SELECT  CustomerName AS "Nombre del cliente" FROM Customers WHERE Country != "Mexico";
+### SELECT  CustomerName AS "Nombre del cliente" FROM Customers WHERE Country != "Mexico";
