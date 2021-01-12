@@ -46,6 +46,26 @@ Del mismo modo podemos pedir que nos dé los productos en donde SupplierID sea i
 La diferencia entre AND y OR radica en qué, AND se utiliza para obtener los datos que cumplen obligatoriamente las condiciones impuestas, con el comando OR 
 pedimos los datos que contengan una u otra condición
 
+Cuando necesitamos muchos elementos asociados a los datos por ejemplo que contenga mas de un país, es tedioso utilizar repetidas veces AND y OR, podemos
+escribir un Query que contenga a varios de ellos a la vez utilizando IN, por ejemplo de la tabla Customers, tomamos las filas que contengan a Germany, OK y Mexico
+
+### SELECT CustomerName AS "Nombre", Country AS "País" FROM Customers WHERE Country IN ("Germany",  "UK", "Mexico");
+
+También podemos obtener todos los datos y excluir a los anteriores paises con NOT IN
+
+### SELECT CustomerName AS "Nombre", Country AS "País" FROM Customers WHERE Country NOT IN ("Germany",  "UK", "Mexico");
+
+Tenemos por otra parte la tabla Products, si de ella quisieramos tomar precios que se encuentren dentro de un intervalo, por ejemplo [20,40]
+
+### SELECT * FROM Products WHERE Price >= 20 AND Price <= 40;
+
+Se hace lo mismo con un solo comando, BETWEEN, es de utilidad al ser mas directo
+
+##SELECT * FROM Products WHERE Price BETWEEN 20 AND 40;
+
+
+
+
 
 
 
