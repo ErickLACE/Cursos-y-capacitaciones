@@ -7,3 +7,5 @@ Seleccionamos todos "*" los elementos contenidos en la tabla Poducts al concluir
 
 Vamos a "personalizar" las tablas, por ejemplo la tabla Orders contiene las columnas OrderID, CustomerID, EmployeeID..., pediremos una tabla  que solo contenga las columnas OrderID y EmployeeID
 ### SELECT  OrderID, CustomerID FROM Orders;
+
+$x^2$
