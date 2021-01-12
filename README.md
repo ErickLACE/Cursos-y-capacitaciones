@@ -1,2 +1,2 @@
-# prueba
-python
+# Aprendiendo bases de datos
+SQL
