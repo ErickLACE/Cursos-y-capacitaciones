@@ -7,5 +7,5 @@ SELECT * FROM [Orders]
 
 
 --Vamos a "personalizar" las tablas, por ejemplo la tabla Orders contiene las columnas OrderID, CustomerID, EmployeeID...
---Vamos a pedir una tabla  que solo contenga las columnas OrderID y EmployeeID
+--pediremos una tabla  que solo contenga las columnas OrderID y EmployeeID
 SELECT  OrderID, CustomerID FROM Orders;
