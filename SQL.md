@@ -61,7 +61,19 @@ Tenemos por otra parte la tabla Products, si de ella quisieramos tomar precios q
 
 Se hace lo mismo con un solo comando, BETWEEN, es de utilidad al ser mas directo
 
-##SELECT * FROM Products WHERE Price BETWEEN 20 AND 40;
+### SELECT * FROM Products WHERE Price BETWEEN 20 AND 40;
+
+Memorizar muchos nombres por ejemplo clientes es a veces imposible, sin embargo podemos recordar cosas como su giro, por ejemplo "tacos" o "gourmet", podemos rastrear
+algun dato que contenga ciertas palabras utilizando LIKE, este comando está relacionado con un signo de porcentaje %, podemos rastrear clientes que contengan la palabra gourmet de la siguiente forma
+
+SELECT * FROM Customers WHERE CustomerName LIKE "%Gourmet%";
+
+si la palabra que buscamos se encuentra al inicio utilizamos gourmet% si sabemos que la oración que buscamos se inicia con "gour" y termina con "met" se escribe gour%met etc etc.
+
+### SELECT * FROM Customers WHERE CustomerName LIKE "Gourmet%";
+
+
+
 
 
 
